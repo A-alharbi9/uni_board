@@ -7,6 +7,28 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'roll-on': {
+          '0%': {
+            transform: 'translateY(-50%)',
+            opacity: 0.1,
+          },
+          '30%': {
+            transform: 'translateY(0%)',
+            opacity: 1,
+          },
+
+          '55%': {
+            opacity: 0.1,
+          },
+          '100%': {
+            transform: 'translateY(150%)',
+          },
+        },
+      },
+      animation: {
+        'roll-on': 'roll-on 5s infinite',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,4 +37,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
