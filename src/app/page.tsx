@@ -53,7 +53,7 @@ export default function Home() {
         <h1 className="text-5xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#9000f0] to-[#0da5d7]">
           Uniboard
         </h1>
-        <h2 className="relative overflow-hidden text-xl font-light w-[18.5rem] text-slate-500">
+        <h2 className="relative overflow-hidden text-xl font-light w-[18.7rem] sm:w-[18.5rem] text-slate-500">
           One clipboard - Multiple
           <div>
             <p
@@ -78,7 +78,7 @@ export default function Home() {
         </h2>
       </div>
       <form
-        className="flex flex-col items-center justify-around h-[20rem] w-[20rem] bg-blue-500 rounded-md md:rounded-xl"
+        className="flex flex-col items-center justify-around h-[20rem] w-[min(90%,20rem)] bg-blue-500 rounded-md md:rounded-xl"
         onSubmit={addUser}
         method="POST"
       >
