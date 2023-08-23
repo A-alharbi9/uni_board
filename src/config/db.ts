@@ -2,7 +2,7 @@ import _mongoose, { connect } from 'mongoose';
 
 declare global {
   var mongoose: {
-    promise: ReturnType<typeof connect> | null;
+    promise: Promise<typeof connect | void> | null;
     conn: typeof _mongoose | null;
   };
 }
@@ -16,8 +16,6 @@ if (!cached) {
 
 async function connectDb() {
   if (cached.conn) {
-    console.log('Cache!!!!');
-
     return cached.conn;
   }
   if (!cached.promise) {
