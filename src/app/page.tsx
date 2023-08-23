@@ -2,13 +2,13 @@
 
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { BaseSyntheticEvent, useState } from 'react';
 
 export default function Home() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-  const addUser = async (event) => {
+  const addUser = async (event: BaseSyntheticEvent) => {
     try {
       event.preventDefault();
 
@@ -30,7 +30,7 @@ export default function Home() {
       });
 
       const contentType = res.headers.get('Content-Type');
-      const isJson = contentType.includes('application/json');
+      const isJson = contentType?.includes('application/json');
       const data = isJson ? await res.json() : await res.text();
 
       if (data.token) {
@@ -43,7 +43,7 @@ export default function Home() {
 
       router.push('/dashboard');
     } catch (err) {
-      console.log('err: ', err.stack);
+      console.log('err: ', err);
     }
   };
 
