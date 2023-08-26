@@ -57,19 +57,19 @@ export default function Home() {
           One clipboard - Multiple
           <div>
             <p
-              className="absolute top-0 text-base opacity-0 sm:text-lg right-4 sm:right-6 animate-roll-on"
+              className="absolute top-0 text-base opacity-0 sm:text-lg lg:text-xl right-4 sm:right-6 lg:right-4 animate-roll-on"
               style={{ animationDelay: '1s' }}
             >
               devices
             </p>
             <p
-              className="absolute top-0 right-0 text-base opacity-0 sm:text-lg animate-roll-on"
+              className="absolute top-0 text-base opacity-0 -right-1 sm:right-1 lg:-right-2 sm:text-lg lg:text-xl animate-roll-on"
               style={{ animationDelay: '2.7s' }}
             >
               languages
             </p>
             <p
-              className="absolute top-0 text-base opacity-0 sm:text-lg right-2 sm:right-4 animate-roll-on"
+              className="absolute top-0 text-base opacity-0 sm:text-lg lg:text-xl right-2 sm:right-4 lg:right-2 animate-roll-on"
               style={{ animationDelay: '4.4s' }}
             >
               user lists
