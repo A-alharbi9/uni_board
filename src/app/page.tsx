@@ -53,23 +53,23 @@ export default function Home() {
         <h1 className="text-5xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#9000f0] to-[#0da5d7]">
           Uniboard
         </h1>
-        <h2 className="relative overflow-hidden text-base sm:text-xl font-light w-[15rem] sm:w-[18.5rem] text-slate-500 px-1">
+        <h2 className="relative overflow-hidden text-base sm:text-xl font-light w-[15.5rem] sm:w-[18.5rem] text-slate-500 px-1">
           One clipboard - Multiple
           <div>
             <p
-              className="absolute top-0 text-base opacity-0 sm:text-lg lg:text-xl right-4 sm:right-6 lg:right-4 animate-roll-on"
+              className="absolute top-0 text-base opacity-0 sm:text-lg lg:text-xl right-2 sm:right-6 lg:right-4 animate-roll-on"
               style={{ animationDelay: '1s' }}
             >
               devices
             </p>
             <p
-              className="absolute top-0 text-base opacity-0 -right-1 sm:right-1 lg:-right-2 sm:text-lg lg:text-xl animate-roll-on"
+              className="absolute top-0 right-0 text-base opacity-0 sm:right-1 lg:-right-2 sm:text-lg lg:text-xl animate-roll-on"
               style={{ animationDelay: '2.7s' }}
             >
               languages
             </p>
             <p
-              className="absolute top-0 text-base opacity-0 sm:text-lg lg:text-xl right-2 sm:right-4 lg:right-2 animate-roll-on"
+              className="absolute top-0 right-0 text-base opacity-0 sm:text-lg lg:text-xl sm:right-4 lg:right-2 animate-roll-on"
               style={{ animationDelay: '4.4s' }}
             >
               user lists
