@@ -53,29 +53,18 @@ export default function Home() {
         <h1 className="text-5xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#9000f0] to-[#0da5d7]">
           Uniboard
         </h1>
-        <h2 className="relative overflow-hidden text-base sm:text-xl font-light w-[15.5rem] sm:w-[18.5rem] text-slate-500 px-1">
-          One clipboard - Multiple
+        <div className="flex items-center justify-between mt-1 overflow-hidden h-7">
           <div>
-            <p
-              className="absolute top-0 text-base opacity-0 sm:text-lg lg:text-xl right-2 sm:right-6 lg:right-4 animate-roll-on"
-              style={{ animationDelay: '1s' }}
-            >
-              devices
-            </p>
-            <p
-              className="absolute top-0 right-0 text-base opacity-0 sm:right-1 lg:-right-2 sm:text-lg lg:text-xl animate-roll-on"
-              style={{ animationDelay: '2.7s' }}
-            >
-              languages
-            </p>
-            <p
-              className="absolute top-0 right-0 text-base opacity-0 sm:text-lg lg:text-xl sm:right-4 lg:right-2 animate-roll-on"
-              style={{ animationDelay: '4.4s' }}
-            >
-              user lists
-            </p>
+            <h2 className="h-full text-sm font-light lg:text-xl text-slate-500">
+              One clipboard - Multiple
+            </h2>
           </div>
-        </h2>
+          <div className="flex flex-col justify-around h-[10rem] px-1 text-slate-500 font-light animate-roll-text">
+            <p className="text-base sm:text-lg lg:text-xl">devices</p>
+            <p className="text-base sm:text-lg lg:text-xl">languages</p>
+            <p className="w-20 text-base sm:text-lg lg:text-xl">user lists</p>
+          </div>
+        </div>
       </div>
       <form
         className="flex flex-col items-center justify-around h-[20rem] w-[min(90%,20rem)] bg-blue-500 rounded-md md:rounded-xl"
